@@ -13,7 +13,7 @@ interface ChartData {
   templateUrl: './step-analysis.page.html',
   styleUrls: ['./step-analysis.page.scss'],
   standalone: true,
-  imports: [IonRow, IonGrid, IonCardContent, IonIcon, IonCard, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
+  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
 })
 export class StepAnalysisPage implements OnInit {
   chartData: ChartData[] = [
