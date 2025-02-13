@@ -1,0 +1,7 @@
+{
+  "name": "smartely",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
