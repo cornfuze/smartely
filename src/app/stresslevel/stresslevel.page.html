@@ -1,13 +1,134 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>stresslevel</ion-title>
-  </ion-toolbar>
-</ion-header>
+<div class="bg-white">
+  <div class="bg-gray-100 p-4">
+    <div class="flex items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" 
+           class="w-4 h-4 text-amber-900" 
+           viewBox="0 0 24 24" 
+           fill="none" 
+           stroke="currentColor" 
+           stroke-width="2">
+        <polyline points="15 18 9 12 15 6" />
+      </svg>
+      <span class="text-2xl font-bold text-amber-900">Stress Level</span>
+    </div>
+  </div>
+  
+  <div class="w-full h-screen rounded-3xl shadow-[0_-10px_15px_-3px_rgba(0,0,0,0.1)] max-w-2xl mx-auto px-6 bg-white">
+    <div class="p-4">
+      <div class="flex justify-between items-center">
+        <div>
+          <div class="flex items-center gap-3">
+            <img src="assets/img/loc.png" alt="loc" class="w-8 h-10">
+            <h1 class="text-xl font-bold text-gray-800">Monday</h1>
+          </div>
+          <p class="text-sm text-gray-500 ml-10">30 December 2024</p>
+        </div>
+        <div class="w-6 h-6">
+          <svg xmlns="http://www.w3.org/2000/svg" 
+               class="text-gray-400" 
+               viewBox="0 0 24 24" 
+               fill="none" 
+               stroke="currentColor" 
+               stroke-width="2">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+            <line x1="16" y1="2" x2="16" y2="6"></line>
+            <line x1="8" y1="2" x2="8" y2="6"></line>
+            <line x1="3" y1="10" x2="21" y2="10"></line>
+          </svg>
+        </div>
+      </div>
+     </div>
+     <div class="max-w-md mx-auto bg-white pr-6 mb-6 pl-6 rounded-xl shadow-[0_10px_15px_3px_rgba(0,0,0,0.1)]">
+      <!-- Header Section -->
+      <div class="flex justify-between items-start mb-6">
+          <div class="flex-1 pt-2">
+              <p class="text-amber-700 text-sm font-bold">Moderate: 41% - 60%</p>
+              <p class="text-sm text-gray-500 mt-2 text-justify">Noticeable but manageable stress, with mild anxiety, slight fatigue, or tension in the shoulders.</p>
+              <p class="text-sm text-gray-500 mt-1 text-justify">Examples include: running errands, attending family gatherings, or dealing with minor household tasks.</p>
+          </div>
+          <div class="flex flex-col items-end ml-4 pt-2">
+              <span class="text-4xl font-bold text-amber-600">57%</span>
+              <span class="text-sm text-amber-600">Stress level</span>
+          </div>
+      </div>
+  
+      <!-- Stress Level Indicator -->
+      <div class="relative mt-8">
+          <!-- Gradient Bar -->
+          <div class="h-6 rounded-full bg-gradient-to-r from-cyan-300 via-yellow-300 to-red-400"></div>
+          
+          <!-- Triangle Indicator -->
+          <div class="absolute top-0 left-[57%] -translate-x-1/2 -translate-y-1/2">
+              <div class="w-0 h-0 border-x-8 border-x-transparent border-t-[12px] border-t-black"></div>
+          </div>
+  
+          <!-- Labels -->
+          <div class="flex justify-between mt-2">
+              <span class="text-sm text-gray-600">Relaxed</span>
+              <span class="text-sm text-gray-600">Overwhelmed</span>
+          </div>
+      </div>
+  </div>
+  
+  <div class="grid grid-cols-5 gap-2">
+    <!-- Very Low -->
+    <div class="flex flex-col items-center text-center bg-gray-100 p-2 rounded-xl shadow-lg">
+        <div class="flex items-center justify-center mb-2">
+          <img src="assets/img/smile1.png" alt="Device">
+        </div>
+        <div class="flex flex-col flex-grow justify-between min-h-[120px]">
+            <p class="text-sm font-bold text-amber-800">Very Low</p>
+            <p class="text-xs text-gray-500">[Relaxed]</p>
+            <p class="text-xs text-gray-600">Minimal stress, body and mind in a relaxed state.</p>
+        </div>
+    </div>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">stresslevel</ion-title>
-    </ion-toolbar>
-  </ion-header>
-</ion-content>
+    <!-- Low -->
+    <div class="flex flex-col items-center text-center bg-gray-100 p-2 rounded-xl shadow-lg">
+        <div class="flex items-center justify-center mb-2">
+          <img src="assets/img/smile2.png" alt="Device">
+        </div>
+        <div class="flex flex-col flex-grow justify-between min-h-[120px]">
+            <p class="text-sm font-bold text-amber-800">Low</p>
+            <p class="text-xs text-gray-500">[Calm]</p>
+            <p class="text-xs text-gray-600">Mild stress, still within a comfortable range.</p>
+        </div>
+    </div>
+
+    <!-- Medium -->
+    <div class="flex flex-col items-center text-center bg-gray-100 p-2 rounded-xl shadow-lg">
+        <div class="flex items-center justify-center mb-2">
+          <img src="assets/img/smile3.png" alt="Device">
+        </div>
+        <div class="flex flex-col flex-grow justify-between min-h-[120px]">
+            <p class="text-sm font-bold text-amber-800">Medium</p>
+            <p class="text-xs text-gray-500">[Moderate]</p>
+            <p class="text-xs text-gray-600">Noticeable stress, manageable with effort.</p>
+        </div>
+    </div>
+
+    <!-- High -->
+    <div class="flex flex-col items-center text-center bg-gray-100 p-2 rounded-xl shadow-lg">
+        <div class="flex items-center justify-center mb-2">
+          <img src="assets/img/smile4.png" alt="Device">
+        </div>
+        <div class="flex flex-col flex-grow justify-between min-h-[120px]">
+            <p class="text-sm font-bold text-amber-800">High</p>
+            <p class="text-xs text-gray-500">[Stressed]</p>
+            <p class="text-xs text-gray-600">High stress, starting to impact emotions and focus.</p>
+        </div>
+    </div>
+
+    <!-- Very High -->
+    <div class="flex flex-col items-center text-center bg-gray-100 p-2 rounded-xl shadow-lg">
+        <div class="flex items-center justify-center mb-2">
+          <img src="assets/img/smile5.png" alt="Device">
+        </div>
+        <div class="flex flex-col flex-grow justify-between min-h-[120px]">
+            <p class="text-sm font-bold text-amber-800">Very High</p>
+            <p class="text-xs text-gray-500">[Overwhelmed]</p>
+            <p class="text-xs text-gray-600">Extreme stress, difficult to manage or control.</p>
+        </div>
+    </div>
+</div>
+  </div>

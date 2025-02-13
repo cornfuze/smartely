@@ -62,4 +62,5 @@ export class BatteryChartComponent implements OnInit {
       },
     });
   }
+  
 }
