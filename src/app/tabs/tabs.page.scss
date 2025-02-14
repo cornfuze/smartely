@@ -1,1 +1,36 @@
 
+ion-tab-bar {
+  --background: #78A66B; /* Warna latar belakang tab */
+  --color-selected: #007bff; /* Warna teks dan ikon saat dipilih */
+  --color: #6c757d; /* Warna teks dan ikon saat tidak dipilih */
+  border-radius: 20px;
+  margin: 10px;
+  padding: 5px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+ion-tab-button {
+  --icon-color-selected: #007bff; /* Warna ikon saat dipilih */
+  --icon-color: white; /* Warna ikon saat tidak dipilih */
+  --color:white;
+  font-size: 12px;
+  background: transparent ;
+}
+
+ion-tab-button::part(icon) {
+  font-size: 24px; /* Ukuran ikon */
+}
+
+ion-tab-button::part(label) {
+  font-size: 14px; /* Ukuran teks */
+}
+
+
+.custom-tab-bar ion-icon {
+  font-size: 22px;
+  color: white ;
+}
