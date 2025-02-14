@@ -17,16 +17,16 @@ export class BatteryChartComponent implements OnInit {
 
   createChart() {
     this.chart = new Chart('batteryChart', {
-      type: 'line', // Jenis chart
+      type: 'line',
       data: {
-        labels: ['00:00', '01:00', '02:00', '03:00', '04:00', '05:00', '06:00', '07:00', '08:00'], // Label jam
+        labels: ['00:00', '01:00', '02:00', '03:00', '04:00', '05:00', '06:00', '07:00', '08:00'], 
         datasets: [
           {
-            label: 'Battery Usage (%)', // Label dataset
-            data: [80, 70, 85, 70, 90, 50, 40, 20, 55], // Data persentase baterai
-            borderColor: 'rgb(27, 176, 82)', // Warna garis
+            label: 'Battery Usage (%)', 
+            data: [80, 70, 85, 70, 90, 50, 40, 20, 55], 
+            borderColor: 'rgb(27, 176, 82)',
             borderWidth: 2,
-            fill: false, // Tidak mengisi area bawah garis
+            fill: false,
             tension: 0.3
           },
         ],
@@ -43,6 +43,9 @@ export class BatteryChartComponent implements OnInit {
             },
             title: {
               display: true,
+              font: {
+                size: 2,
+              },
             },
           },
           x: {
@@ -56,6 +59,9 @@ export class BatteryChartComponent implements OnInit {
             },
             title: {
               display: true,
+              font: {
+                size: 2,
+              },
             },
           },
         },
