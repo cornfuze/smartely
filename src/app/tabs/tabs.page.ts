@@ -1,7 +1,7 @@
 import { Component, EnvironmentInjector, inject } from '@angular/core';
 import { IonTabs, IonTabBar, IonTabButton, IonIcon, IonLabel } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
-import { triangle, ellipse, square } from 'ionicons/icons';
+import { homeOutline, notificationsOutline, documentTextOutline, timeOutline, home , notifications, documentText, time} from 'ionicons/icons';
 
 @Component({
   selector: 'app-tabs',
@@ -11,8 +11,12 @@ import { triangle, ellipse, square } from 'ionicons/icons';
 })
 export class TabsPage {
   public environmentInjector = inject(EnvironmentInjector);
+  selectedTab: string = 'tab2';
 
   constructor() {
-    addIcons({ triangle, ellipse, square });
+    addIcons({ homeOutline, notificationsOutline, documentTextOutline, timeOutline, home, notifications, documentText, time });
+  }
+  tabChanged(event: any) {
+    this.selectedTab = event.tab;
   }
 }
