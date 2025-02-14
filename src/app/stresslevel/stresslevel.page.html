@@ -1,5 +1,5 @@
-<div class="bg-white min-h-screen overflow-y-auto pb-16">
-  <div class="bg-gray-100 p-4">
+<div class="bg-white">
+  <div class="bg-gray-100 p-4" (click)="goBack()">
     <div class="flex items-center gap-2">
       <svg xmlns="http://www.w3.org/2000/svg" 
            class="w-4 h-4 text-amber-900" 
@@ -78,8 +78,8 @@
         </div>
         <div class="flex flex-col flex-grow justify-between min-h-[120px]">
             <p class="text-sm font-bold text-amber-800">Very Low</p>
-            <p class="text-xs text-gray-500">[Relaxed]</p>
-            <p class="text-xs text-gray-600">Minimal stress, body and mind in a relaxed state.</p>
+            <p class="w-11 text-xs font-bold text-gray-500">Relaxed</p>
+            <p class="w-11 text-xs text-gray-600">Minimal stress</p>
         </div>
     </div>
 
@@ -90,8 +90,8 @@
         </div>
         <div class="flex flex-col flex-grow justify-between min-h-[120px]">
             <p class="text-sm font-bold text-amber-800">Low</p>
-            <p class="text-xs text-gray-500">[Calm]</p>
-            <p class="text-xs text-gray-600">Mild stress, still within a comfortable range.</p>
+            <p class="w-11 text-xs font-bold  text-gray-500">Calm</p>
+            <p class="w-11 text-xs text-gray-600">Mild stress</p>
         </div>
     </div>
 
@@ -102,8 +102,8 @@
         </div>
         <div class="flex flex-col flex-grow justify-between min-h-[120px]">
             <p class="text-sm font-bold text-amber-800">Medium</p>
-            <p class="text-xs text-gray-500">[Moderate]</p>
-            <p class="text-xs text-gray-600">Noticeable stress, manageable with effort.</p>
+            <p class="w-11 text-xs font-bold text-gray-500">Moderate</p>
+            <p class="w-11 text-xs text-gray-600">Noticeable stress</p>
         </div>
     </div>
 
@@ -114,8 +114,8 @@
         </div>
         <div class="flex flex-col flex-grow justify-between min-h-[120px]">
             <p class="text-sm font-bold text-amber-800">High</p>
-            <p class="text-xs text-gray-500">[Stressed]</p>
-            <p class="text-xs text-gray-600">High stress, starting to impact emotions.</p>
+            <p class="w-11 text-xs font-bold text-gray-500">Stressed</p>
+            <p class="w-11 text-xs text-gray-600">High stress</p>
         </div>
     </div>
 
@@ -124,10 +124,10 @@
         <div class="flex items-center justify-center mb-2">
           <img src="assets/img/smile5.png" alt="Device">
         </div>
-        <div class="flex flex-col flex-grow justify-between min-h-[120px]">
+        <div class="flex mb-4 flex-col flex-grow justify-between min-h-[120px]">
             <p class="text-sm font-bold text-amber-800">Very High</p>
-            <p class="text-xs text-gray-500">[Overwhelmed]</p>
-            <p class="text-xs text-gray-600">Extreme stress, difficult to manage or control.</p>
+            <p class="w-11 text-xs font-bold text-gray-500">Overwhelmed</p>
+            <p class="w-11 text-xs text-gray-600">Extreme stress</p>
         </div>
     </div>
 </div>

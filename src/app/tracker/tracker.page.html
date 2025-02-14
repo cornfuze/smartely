@@ -1,0 +1,122 @@
+<!-- Main Container with fixed height -->
+<div class="h-screen bg-gray-100"> <!-- Container untuk seluruh konten dengan tinggi layar penuh -->
+  <div class="max-w-md mx-auto h-full bg-white overflow-y-auto"> <!-- Container yang bisa di-scroll -->
+    <!-- Medication Section -->
+    <div class="bg-emerald-600/90 justify-center rounded-2xl p-4 m-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+          <div class="p-2 rounded-xl">
+            <img src="assets/img/med.png" alt="medicine" class="w-full">
+          </div>
+          <div>
+            <h2 class="text-white font-semibold text-lg">Medication Reminder</h2>
+            <p class="text-white text-sm">Please enter your medication schedule below to ensure timely reminders</p>
+          </div>
+        </div>
+        <div class="bg-green-800 rounded-full p-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Today Schedule -->
+    <div class="px-4">
+      <h3 class="text-blue-900 font-bold text-xl mb-3">Today Schedule</h3>
+      
+      <!-- Medicine 1 -->
+      <div class="bg-white rounded-xl p-4 shadow-sm mb-3">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center space-x-3">
+            <div class="bg-gray-100 p-2 rounded-lg">
+              <img src="assets/img/med3.png" alt="pill" class="w-8 h-8">
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-800">Medicine 1</h4>
+              <div class="space-y-1 text-sm text-gray-500">
+                <p>Today 10:00 AM</p>
+                <p>1 tablet</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center space-x-2">
+            <div class="bg-gray-100 p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <div class="bg-green-100 p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <button class="p-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Medicine 2 -->
+      <div class="bg-white rounded-xl p-4 shadow-sm">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center space-x-3">
+            <div class="bg-gray-100 p-2 rounded-lg">
+              <img src="assets/img/med3.png" alt="pill" class="w-8 h-8">
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-800">Medicine 2</h4>
+              <div class="space-y-1 text-sm text-gray-500">
+                <p>Today 05:30 PM</p>
+                <p>1 tablet</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center space-x-2">
+            <div class="bg-gray-100 p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <div class="bg-gray-100 p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <button class="p-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sleep Reminder -->
+    <div class="bg-emerald-600/90 rounded-2xl p-4 m-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+          <div class="p-2 rounded-xl">
+            <img src="assets/img/med2.png" alt="sleep" class="w-full">
+          </div>
+          <div>
+            <h2 class="text-white font-semibold text-lg">Sleep Reminder</h2>
+            <p class="text-white text-sm">Please enter your sleep schedule below to ensure timely reminders</p>
+          </div>
+        </div>
+        <div class="flex items-center space-x-2">
+          <span class="text-white font-semibold">09:00 PM</span>
+          <div class="bg-green-800 rounded-full p-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

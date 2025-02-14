@@ -1,0 +1,56 @@
+<!-- Main Container -->
+<div class="h-screen bg-amber-900"> <!-- Background coklat tua -->
+  <!-- Header with back button -->
+  <div class="relative flex items-center justify-center p-4 text-white/90" (click)="goBack()">
+    <button class="absolute left-4">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" stroke="currentColor" fill="none">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7 7-7" />
+      </svg>
+    </button>
+    <h1 class="text-lg font-medium">Herb Information</h1>
+  </div>
+
+  <!-- Main Content -->
+  <div class="px-4">
+    <!-- Image Section -->
+    <div class="mb-4">
+      <img src="assets/img/jawa1.png" alt="Asam Jawa" 
+        class="w-full h-64 object-cover rounded-2xl">
+    </div>
+
+    <!-- Title Section -->
+    <div class="text-center text-white mb-6">
+      <h2 class="text-3xl font-bold mb-1">Asam Jawa</h2>
+      <p class="text-lg text-white/80">Tamarind Drink</p>
+    </div>
+
+    <!-- Tabs -->
+    <div class="flex space-x-4 mb-6">
+      <button class="flex-1 py-3 text-center text-white font-medium border-b-2 border-white">
+        Article
+      </button>
+      <button class="flex-1 py-3 text-center text-white/60 font-medium">
+        Making Guide
+      </button>
+    </div>
+
+    <!-- Content -->
+    <div class="bg-white rounded-t-3xl p-6">
+      <article class="text-gray-700 leading-relaxed">
+        <p class="mb-4">
+          <span class="font-semibold text-amber-600">Jamu Asam Jawa</span> is a traditional 
+          Indonesian herbal drink made primarily from tamarind pulp, sugar, and water.
+        </p>
+        <p class="mb-4">
+          The name "asam jawa" refers to tamarind, which is the key ingredient in this drink.
+        </p>
+        <p class="mb-4">
+          Tamarind is known for its tangy, sour taste and is packed with nutrients, 
+          including vitamin C, antioxidants, and dietary fiber. The drink is typically 
+          enjoyed cold and is often consumed for its refreshing qualities, especially in 
+          hot weather.
+        </p>
+      </article>
+    </div>
+  </div>
+</div>

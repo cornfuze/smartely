@@ -1,4 +1,18 @@
-<div class="w-96 p-6 mx-auto bg-white rounded-xl shadow-lg min-h-screen">
+<div style="background-color: white;">
+<div class="bg-gray-100 p-4" (click)="goBack()">
+    <div class="flex items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" 
+           class="w-4 h-4 text-amber-900" 
+           viewBox="0 0 24 24" 
+           fill="none" 
+           stroke="currentColor" 
+           stroke-width="2">
+        <polyline points="15 18 9 12 15 6" />
+      </svg>
+      <span class="text-2xl font-bold text-amber-900">Device</span>
+    </div>
+  </div>
+<div class="w-full p-6 mx-auto bg-white rounded-xl shadow-lg min-h-screen ">
   <div class="flex items-center justify-between">
       <img src="assets/img/SMARTELY.png" alt="Smartwatch" class="w-24 h-24">
       <div>
@@ -26,4 +40,5 @@
   </div>
   <div class="mt-4 bg-gray-100 p-4 rounded"><app-battery-chart></app-battery-chart></div>
   
+</div>
 </div>

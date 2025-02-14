@@ -1,0 +1,74 @@
+<!-- Main Container with wave background -->
+<div class="min-h-screen bg-[#B08968] relative">
+  <!-- Wave decorations -->
+  <div class="absolute top-0 left-0 right-0">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="w-full text-white">
+      <path fill="currentColor" fill-opacity="0.15" d="M0,128L80,144C160,160,320,192,480,192C640,192,800,160,960,154.7C1120,149,1280,171,1360,181.3L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+    </svg>
+  </div>
+
+  <!-- Content -->
+  <div class="relative p-6">
+    <!-- Header -->
+    <div class="mb-6 flex items-start gap-3" (click)="goBack()">
+      <div class="mt-10">
+        <svg xmlns="http://www.w3.org/2000/svg" 
+             class="w-7 h-7 text-amber-900" 
+             viewBox="0 0 24 24" 
+             fill="none"   
+             stroke="currentColor" 
+             stroke-width="2">
+          <polyline points="15 18 9 12 15 6" />
+        </svg>
+      </div>
+      <div>
+        <h1 class="text-4xl font-bold text-brown-900 leading-tight">Smart</h1>
+        <h1 class="text-4xl font-bold text-brown-900 leading-tight">Recomendation</h1>
+      </div>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="relative mb-8">
+      <span class="absolute inset-y-0 left-3 flex items-center">
+        <svg class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+      </span>
+      <input type="text" 
+        placeholder="Search Jamu..." 
+        class="w-full pl-10 pr-4 py-3 rounded-2xl bg-orange-50/90 border-none focus:ring-2 focus:ring-orange-200 text-gray-900 placeholder-gray-400">
+    </div>
+
+    <!-- Recommended Section -->
+    <div class="mb-6">
+      <h2 class="text-xl font-semibold text-brown-900 mb-4">Recommended Jamu</h2>
+      
+      <!-- Horizontal Scrollable Cards -->
+      <div class="flex overflow-x-auto pb-4 space-x-4 no-scrollbar">
+        <!-- Card 1 -->
+        <div class="flex-shrink-0 w-64 bg-white rounded-3xl p-4">
+          <img src="assets/img/jawa1.png" alt="Kunyit Asam" 
+            class="w-full h-40 object-cover rounded-2xl mb-3">
+          <h3 class="text-xl font-bold text-brown-900 mb-2">Jamu Kunyit Asam</h3>
+          <p class="text-brown-700">Good for reducing inflammation and improving digestion.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="flex-shrink-0 w-64 bg-white rounded-3xl p-4">
+          <img src="assets/img/jawa.png" alt="Beras Kencur" 
+            class="w-full h-40 object-cover rounded-2xl mb-3">
+          <h3 class="text-xl font-bold text-brown-900 mb-2">Jamu Beras Kencur</h3>
+          <p class="text-brown-700">Eases digestion and reduces body odor.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="flex-shrink-0 w-64 bg-white rounded-3xl p-4">
+          <img src="assets/img/jawa1.png" alt="Temulawak" 
+            class="w-full h-40 object-cover rounded-2xl mb-3">
+          <h3 class="text-xl font-bold text-brown-900 mb-2">Jamu Temulawak</h3>
+          <p class="text-brown-700">Improves appetite and liver function.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

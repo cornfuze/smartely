@@ -33,6 +33,26 @@ export const routes: Routes = [
     path: 'faq',
     loadComponent: () => import('./faq/faq.page').then( m => m.FaqPage)
   },
+  {
+    path: 'tab3',
+    loadComponent: () => import('./tab3/tab3.page').then( m => m.Tab3Page)
+  },  {
+    path: 'tracker',
+    loadComponent: () => import('./tracker/tracker.page').then( m => m.TrackerPage)
+  },
+  {
+    path: 'lifestyle',
+    loadComponent: () => import('./lifestyle/lifestyle.page').then( m => m.LifestylePage)
+  },
+  {
+    path: 'jamu',
+    loadComponent: () => import('./jamu/jamu.page').then( m => m.JamuPage)
+  },
+  {
+    path: 'recomendation',
+    loadComponent: () => import('./recomendation/recomendation.page').then( m => m.RecomendationPage)
+  },
+
 
 
 ];

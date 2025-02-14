@@ -20,4 +20,13 @@ export class Tab2Page {
   navigateToStepAnalysis() {
     this.router.navigate(['/stepanalysis']);
   }
+
+  navigateToStressLevel() {
+    this.router.navigate(['/stresslevel']);
+  }
+
+  navigateToSpo() {
+    this.router.navigate(['/spo']);
+  }
 }
+

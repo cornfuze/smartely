@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
 import { StressChartComponent } from '../stress-chart/stress-chart.component';
+import { Location } from '@angular/common';
+
 
 @Component({
   selector: 'app-stresslevel',
@@ -13,7 +15,11 @@ import { StressChartComponent } from '../stress-chart/stress-chart.component';
 })
 export class StresslevelPage implements OnInit {
 
-  constructor() { }
+  constructor(private location: Location) {}
+
+  goBack() {
+    this.location.back();
+  }
 
   ngOnInit() {
   }

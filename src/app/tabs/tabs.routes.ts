@@ -57,6 +57,21 @@ export const routes: Routes = [
           import('../faq/faq.page').then((m) => m.FaqPage),
       },
       {
+        path: 'tracker',
+        loadComponent: () =>
+          import('../tracker/tracker.page').then((m) => m.TrackerPage),
+      },
+      {
+        path: 'lifestyle',
+        loadComponent: () =>
+          import('../lifestyle/lifestyle.page').then((m) => m.LifestylePage),
+      },
+      {
+        path: 'recomendation',
+        loadComponent: () =>
+          import('../recomendation/recomendation.page').then((m) => m.RecomendationPage),
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full',
