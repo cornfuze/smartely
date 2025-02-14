@@ -12,7 +12,7 @@ import { SleepQualityChartComponent } from '../sleep-quality-chart/sleep-quality
   templateUrl: './spo.page.html',
   styleUrls: ['./spo.page.scss'],
   standalone: true,
-  imports: [IonIcon,  CommonModule, FormsModule,SleepQualityChartComponent]
+  imports: [CommonModule, FormsModule,SleepQualityChartComponent]
 })
 export class SpoPage implements OnInit {
 

@@ -10,7 +10,7 @@ import { Location } from '@angular/common';
   templateUrl: './jamu.page.html',
   styleUrls: ['./jamu.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
+  imports: [CommonModule, FormsModule]
 })
 export class JamuPage implements OnInit {
 
